@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_front": "",
+    "start_back": "cd backend && node index.js",
+    "start_app": "concurrently \"npm run start_back\" \"npm run start_front\""
   },
   "keywords": [],
   "author": "",
